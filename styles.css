@@ -1,0 +1,104 @@
+:root {
+    --black: #000000;
+    --electric-purple: #7F00FF;
+    --neon-yellow: #FFF85B;
+    --neon-blue: #B4F8FF;
+    --light-gray: #E0E0E0;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+.bg-electric-purple {
+    background-color: var(--electric-purple);
+}
+
+.text-electric-purple {
+    color: var(--electric-purple);
+}
+
+.border-electric-purple {
+    border-color: var(--electric-purple);
+}
+
+.bg-neon-yellow {
+    background-color: var(--neon-yellow);
+}
+
+.text-neon-yellow {
+    color: var(--neon-yellow);
+}
+
+.border-neon-yellow {
+    border-color: var(--neon-yellow);
+}
+
+.bg-neon-blue {
+    background-color: var(--neon-blue);
+}
+
+.text-neon-blue {
+    color: var(--neon-blue);
+}
+
+.border-neon-blue {
+    border-color: var(--neon-blue);
+}
+
+.bg-light-gray {
+    background-color: var(--light-gray);
+}
+
+.text-light-gray {
+    color: var(--light-gray);
+}
+
+.border-light-gray {
+    border-color: var(--light-gray);
+}
+
+/* Animation for sections */
+section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Profile image hover effect */
+#profile-img:hover {
+    transform: rotate(5deg) scale(1.1);
+    box-shadow: 0 0 15px var(--neon-yellow);
+}
+
+/* Glow effect for interactive elements */
+button, a, input[type="submit"], .glow-effect {
+    transition: all 0.3s ease;
+}
+
+button:hover, a:hover, input[type="submit"]:hover, .glow-effect:hover {
+    box-shadow: 0 0 10px rgba(127, 0, 255, 0.7), 0 0 20px rgba(127, 0, 255, 0.5);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--electric-purple);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--neon-yellow);
+}

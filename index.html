@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de Igor Balbino - Especialista em Ciência de Dados, Desenvolvimento e Análise de Sistemas com multiexperiência em tecnologia e idiomas.">
+    <meta name="keywords" content="portfolio, desenvolvimento, ciência de dados, análise de sistemas, programação, IA, idiomas">
+    <meta name="author" content="Igor Balbino">
+    <meta property="og:title" content="Igor Balbino | Portfólio Profissional">
+    <meta property="og:description" content="Especialista em Ciência de Dados, Desenvolvimento e Análise de Sistemas.">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#7F00FF">
+    <title>Igor Balbino | Portfólio Profissional</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body class="bg-black text-gray-200 font-sans antialiased">
+    <header class="sticky top-0 z-50 bg-black bg-opacity-90 backdrop-blur-sm border-b border-purple-500">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <img id="profile-img" src="eu2.jpeg" alt="Igor Balbino" class="w-12 h-12 rounded-full border-2 border-electric-purple object-cover hover:border-neon-yellow transition-all duration-300">
+                    <h1 class="text-xl font-bold text-neon-yellow">Igor Balbino</h1>
+                </div>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="#about" class="text-neon-blue hover:text-electric-purple transition-colors duration-300">Sobre</a></li>
+                        <li><a href="#skills" class="text-neon-blue hover:text-electric-purple transition-colors duration-300">Habilidades</a></li>
+                        <li><a href="#projects" class="text-neon-blue hover:text-electric-purple transition-colors duration-300">Projetos</a></li>
+                        <li><a href="#contact" class="text-neon-blue hover:text-electric-purple transition-colors duration-300">Contato</a></li>
+                        <li>
+                            <select id="language-selector" class="bg-black text-neon-blue border border-electric-purple rounded-lg px-2 py-1 focus:outline-none focus:ring-2 focus:ring-neon-yellow">
+                                <option value="pt">🇧🇷 Português</option>
+                                <option value="en">🇬🇧 English</option>
+                                <option value="es">🇪🇸 Español</option>
+                                <option value="it">🇮🇹 Italiano</option>
+                                <option value="ja">🇯🇵 日本語</option>
+                            </select>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12">
+        <section id="hero" class="mb-20">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-electric-purple" data-i18n="hero.title">Transformando ideias em soluções digitais</h2>
+                    <p class="text-xl mb-8 text-gray-300" data-i18n="hero.subtitle">Combinando ciência de dados, desenvolvimento de software e expertise multidisciplinar para criar soluções inovadoras.</p>
+                    <a href="#contact" class="bg-electric-purple hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg shadow-purple-500/30" data-i18n="hero.cta">Vamos conversar</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div class="w-64 h-64 rounded-full border-4 border-neon-yellow overflow-hidden">
+                            <img src="eu2.jpeg" alt="Igor Balbino" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-5 -right-5 bg-electric-purple text-white px-4 py-2 rounded-full font-bold text-sm shadow-lg">5+ anos de experiência</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="mb-20 py-12">
+            <h2 class="text-3xl font-bold mb-12 text-center text-neon-yellow" data-i18n="about.title">Sobre Mim</h2>
+            <div class="bg-gray-900 bg-opacity-50 rounded-2xl p-8 border border-electric-purple">
+                <p class="mb-6 text-lg" data-i18n="about.p1">Olá, eu sou Igor Balbino, um profissional multidisciplinar com formação em Análise e Desenvolvimento de Sistemas e pós-graduação em Ciência de Dados.</p>
+                <p class="mb-6 text-lg" data-i18n="about.p2">Com 5 anos de experiência em programação e 2 anos em análise de redes, trago uma abordagem única que combina conhecimento técnico aprofundado com habilidades de comunicação em múltiplos idiomas.</p>
+                <p class="mb-6 text-lg" data-i18n="about.p3">Minha paixão por tecnologia vai além do desenvolvimento tradicional - sou entusiasta de ferramentas de IA, edição de imagens e sempre busco aprender novas metodologias para oferecer soluções inovadoras.</p>
+                <p class="text-lg" data-i18n="about.p4">Além do mundo digital, tenho conhecimentos sólidos em nutrição e fitness, demonstrando minha capacidade de dominar diversos campos do conhecimento.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-20 py-12">
+            <h2 class="text-3xl font-bold mb-12 text-center text-neon-yellow" data-i18n="skills.title">Habilidades & Experiência</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-gray-900 bg-opacity-50 rounded-2xl p-8 border border-neon-blue">
+                    <h3 class="text-2xl font-bold mb-6 text-electric-purple" data-i18n="skills.education">Formação Acadêmica</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.education1">Pós-graduação em Ciência de Dados - Descomplica</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.education2">Tecnólogo em Análise e Desenvolvimento de Sistemas - UNOPAR</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-900 bg-opacity-50 rounded-2xl p-8 border border-neon-blue">
+                    <h3 class="text-2xl font-bold mb-6 text-electric-purple" data-i18n="skills.languages">Idiomas</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.lang1">Português: Nativo</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.lang2">Inglês: Fluente (C1)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.lang3">Italiano, Japonês, Espanhol: Intermediário</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.lang4">Francês: Básico</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-900 bg-opacity-50 rounded-2xl p-8 border border-neon-blue">
+                    <h3 class="text-2xl font-bold mb-6 text-electric-purple" data-i18n="skills.tech">Tecnologias & Ferramentas</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.tech1">Programação: 5 anos de experiência</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.tech2">Análise de Redes: 2 anos de experiência</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.tech3">Ferramentas de IA: LeonardoAI, SeaArt, Runway, InvideoAI</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.tech4">Desenvolvimento: Web, Mobile, Desktop, Embarcados</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-900 bg-opacity-50 rounded-2xl p-8 border border-neon-blue">
+                    <h3 class="text-2xl font-bold mb-6 text-electric-purple" data-i18n="skills.other">Outros Conhecimentos</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.other1">Data Science & Business Intelligence</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.other2">Edição de Imagens</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-neon-yellow mr-3">•</span>
+                            <span data-i18n="skills.other3">Nutrição e Musculação</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="mb-20 py-12">
+            <h2 class="text-3xl font-bold mb-12 text-center text-neon-yellow" data-i18n="projects.title">Projetos & Empreendimentos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-gray-900 bg-opacity-50 rounded-2xl p-8 border border-electric-purple hover:border-neon-yellow transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-neon-blue">Creatio</h3>
+                    <p class="mb-4" data-i18n="projects.creatio1">Empresa guarda-chuva que engloba diversos projetos e serviços nas áreas de tecnologia e educação.</p>
+                    <p class="mb-4 font-bold text-electric-purple" data-i18n="projects.creatio2">Serviços oferecidos:</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li data-i18n="projects.creatio3">Desenvolvimento de software</li>
+                        <li data-i18n="projects.creatio4">Análise de dados e BI</li>
+                        <li data-i18n="projects.creatio5">Chatbots e consultoria em TI</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-900 bg-opacity-50 rounded-2xl p-8 border border-electric-purple hover:border-neon-yellow transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-neon-blue">Fluently Focused</h3>
+                    <p class="mb-4" data-i18n="projects.fluently1">Plataforma de ensino de idiomas que aproveita minha experiência multilíngue e habilidades pedagógicas.</p>
+                    <p class="mb-4" data-i18n="projects.fluently2">Oferece métodos inovadores para aprendizado eficiente de línguas estrangeiras.</p>
+                </div>
+                <div class="bg-gray-900 bg-opacity-50 rounded-2xl p-8 border border-electric-purple hover:border-neon-yellow transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-4 text-neon-blue">Nutriunt</h3>
+                    <p class="mb-4" data-i18n="projects.nutriunt1">Projeto que combina meus conhecimentos em nutrição e fitness com tecnologia.</p>
+                    <p class="mb-4" data-i18n="projects.nutriunt2">Oferece soluções personalizadas para saúde e bem-estar, com base em dados e evidências científicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-12">
+            <h2 class="text-3xl font-bold mb-12 text-center text-neon-yellow" data-i18n="contact.title">Vamos Trabalhar Juntos</h2>
+            <div class="bg-gray-900 bg-opacity-50 rounded-2xl p-8 border border-neon-blue max-w-2xl mx-auto">
+                <form id="contact-form" class="space-y-6">
+                    <div>
+                        <label for="name" class="block mb-2 text-neon-blue" data-i18n="contact.name">Nome</label>
+                        <input type="text" id="name" name="name" required class="w-full px-4 py-3 bg-gray-800 border border-electric-purple rounded-lg focus:outline-none focus:ring-2 focus:ring-neon-yellow text-white">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2 text-neon-blue" data-i18n="contact.email">Email</label>
+                        <input type="email" id="email" name="email" required class="w-full px-4 py-3 bg-gray-800 border border-electric-purple rounded-lg focus:outline-none focus:ring-2 focus:ring-neon-yellow text-white">
+                    </div>
+                    <div>
+                        <label for="message" class="block mb-2 text-neon-blue" data-i18n="contact.message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3 bg-gray-800 border border-electric-purple rounded-lg focus:outline-none focus:ring-2 focus:ring-neon-yellow text-white"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-electric-purple hover:bg-purple-600 text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 transform hover:scale-105" data-i18n="contact.submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black bg-opacity-90 border-t border-electric-purple py-8">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-neon-blue" data-i18n="footer.copyright">© 2023 Igor Balbino. Todos os direitos reservados.</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.linkedin.com/in/igor-balbino-dev/" class="text-gray-400 hover:text-neon-yellow transition-colors duration-300" target="_blank">
+                        <span class="sr-only">LinkedIn</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/igorbalbino" class="text-gray-400 hover:text-neon-yellow transition-colors duration-300" target="_blank">
+                        <span class="sr-only">GitHub</span>
+                        <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="bg-gray-900 border-2 border-neon-yellow rounded-xl p-8 max-w-md mx-4">
+            <h3 class="text-2xl font-bold text-neon-yellow mb-4" data-i18n="modal.success">Sucesso!</h3>
+            <p class="mb-6" data-i18n="modal.message">Sua mensagem foi enviada com sucesso. Entrarei em contato em breve.</p>
+            <button id="close-modal" class="bg-electric-purple hover:bg-purple-600 text-white font-bold py-2 px-6 rounded-lg transition-all duration-300" data-i18n="modal.close">Fechar</button>
+        </div>
+    </div>
+</body>
+</html>
